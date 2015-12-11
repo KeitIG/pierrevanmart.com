@@ -1,7 +1,8 @@
 var express  = require('express'),
     stylus   = require('stylus'),
     path     = require('path'),
-    compress = require('compression');
+    compress = require('compression'),
+    force    = require('forcedomain');
 
 
 
@@ -24,6 +25,10 @@ app.use(express.static(__dirname + '/public'));
 app.use('/images', express.static(__dirname + '/src/images'));
 
 app.use(compress());
+
+app.use(force({
+  hostname: 'pierrevanmart.com'
+}));
 
 
 
