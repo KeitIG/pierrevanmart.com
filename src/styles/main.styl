@@ -16,7 +16,8 @@ body
         margin-top 20px
 
     .view-home
-        margin-top 10vh
+        @media screen and (min-width: 768px)
+            margin-top 10vh
 
         .h3
             line-height 1.5
@@ -26,12 +27,13 @@ body
             display block
             max-width 100%
             width 150px
-            margin-top 28px
+            margin-top 15px
             border solid 1px #4E4E4E
             box-shadow 0 0 1px black
 
             @media screen and (min-width: 768px)
                 float right
+                margin-top 28px
 
         .white
             color #CACACA
