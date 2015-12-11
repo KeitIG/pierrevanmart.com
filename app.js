@@ -28,12 +28,21 @@ app.use(compress());
 
 
 /*--- Routes -*/
+
+app.get('/*', function(req, res, next) {
+    if (req.headers.host.match(/^www/) !== null ) {
+        res.redirect(301, 'http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    } else {
+        next();
+    }
+})
+
 app.get('/', function (req, res) {
     res.render(
         'home',
         {
             title       : 'Home',
-            description : 'Here I am !',
+            description : 'Full-stack web developer, photographer and musician',
             keywords    : 'Pierre de la Martinière, developer, photographer, musician'
         }
     )
