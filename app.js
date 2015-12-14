@@ -13,7 +13,7 @@ app.set('view engine', 'jade');
 
 app.use(stylus.middleware({
     src     : path.join(__dirname, 'src', 'styles'),
-    dest    : path.join(__dirname, 'public'),
+    dest    : path.join(__dirname, 'public', 'styles'),
     compile : function (str, path) {
         return stylus(str)
             .set('filename', path)
@@ -21,13 +21,13 @@ app.use(stylus.middleware({
     }
 }));
 
-app.use(express.static(__dirname + '/public'));
-app.use('/images', express.static(__dirname + '/src/images'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/images', express.static(path.join(__dirname, 'src', 'images')));
 
 app.use(compress());
 
 app.use(force({
-  hostname: 'pierrevanmart.com'
+    hostname: 'pierrevanmart.com'
 }));
 
 
