@@ -24,6 +24,7 @@ app.use(stylus.middleware({
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/images', express.static(path.join(__dirname, 'src', 'images')));
+app.use('/scripts', express.static(path.join(__dirname, 'src', 'scripts')));
 
 app.use(compress());
 app.use(minify());
