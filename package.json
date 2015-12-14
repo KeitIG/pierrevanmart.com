@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "http://pierrevanmart.com",
   "main": "server.js",
-  "scripts": {
-    "start": "forever start --watch app.js",
-    "stop": "forever stop app.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com:KeitIG/pierrevanmart.com.git"
