@@ -29,7 +29,8 @@ app.use(compress());
 app.use(minify());
 
 app.use(force({
-    hostname: 'pierrevanmart.com'
+    hostname: 'pierrevanmart.com',
+    type:     'permanent'
 }));
 
 
@@ -49,7 +50,7 @@ app.get('/', function (req, res) {
         'home',
         {
             title       : 'Home',
-            description : 'Full-stack web developer, photographer and musician',
+            description : 'Hi ! I\'m Pierre de la Martinière, a full-stack web developer, street-photographer and musician. Nice code, prime lenses and jams are my way of being.',
             keywords    : 'Pierre de la Martinière, developer, photographer, musician'
         }
     )
