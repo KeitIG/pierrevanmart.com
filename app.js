@@ -52,7 +52,7 @@ app.get('/', function (req, res) {
         {
             title       : 'Home',
             description : 'Hi ! I\'m Pierre de la Martinière, a full-stack web developer, street-photographer and musician. Nice code, prime lenses and jams are my way of being.',
-            keywords    : 'Pierre de la Martinière, developer, photographer, musician'
+            keywords    : 'Pierre de la Martinière, full-stack developer, developer, geek, coder, javascript, open-source, photographer, musician'
         }
     )
 });
