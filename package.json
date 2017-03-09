@@ -1,8 +1,8 @@
 {
   "name": "pierrevanmart.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "http://pierrevanmart.com",
-  "main": "server.js",
+  "main": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com:KeitIG/pierrevanmart.com.git"
@@ -13,17 +13,17 @@
     "url": "https://github.com/KeitIG/pierrevanmart.com/issues"
   },
   "homepage": "https://github.com/KeitIG/pierrevanmart.com#readme",
+  "scripts": {
+    "compile": "gulp"
+  },
   "dependencies": {
-    "compression": "^1.6.0",
-    "express": "^4.13.3",
-    "express-minify": "^0.1.6",
-    "forcedomain": "^0.5.0",
-    "forever": "^0.15.1",
-    "i": "^0.3.3",
-    "jade": "^1.11.0",
-    "stylus": "^0.52.4"
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.1.0",
+    "gulp-stylus": "^2.6.0"
   },
   "devDependencies": {
-    "eslint": "^1.9.0"
+    "del": "^2.2.2",
+    "eslint": "^3.17.1",
+    "gulp": "^3.9.1"
   }
 }
