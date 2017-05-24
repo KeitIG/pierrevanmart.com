@@ -1,32 +1,34 @@
 doctype
 html(lang='en')
     head
-        title Pierre de la Martinière - Here I am
+        block vars
+        title!= `Pierre de la Martinière - ${title}`
 
         meta(name='viewport' content='width=device-width, initial-scale=1')
 
         meta(charset='UTF-8')
 
-        meta(name='description' content='Hi ! I\'m Pierre de la Martinière, a full-stack web developer, street-photographer and musician. I love nice code, prime lenses, jams and belgian beers.')
+        meta(name='description' content=description)
         meta(name='keywords' content='Pierre de la Martinière, full-stack developer, developer, geek, coder, javascript, open-source, photographer, musician')
         meta(name='author' content='Pierre de la Martinière')
         meta(name='robots' content='index, follow')
 
-        meta(property='og:title' content='Pierre de la Martinière - Here I am')
-        meta(property='og:description' content='Hi ! I\'m Pierre de la Martinière, a full-stack web developer, street-photographer and musician. I love nice code, prime lenses, jams and belgian beers.')
+        meta(property='og:title' content=`Pierre de la Martinière - ${title}`)
+        meta(property='og:description' content=description)
         meta(property='og:type' content='website')
-        meta(property='og:url' content='http://pierrevanmart.com')
+        meta(property='og:url' content=`http://pierrevanmart.com${canonical}`)
 
         meta(name='google-site-verification' content='qnlJ7QuO7bcx3atSdTDmeNDu3DfaY4gxtMwE7AUlits')
 
-        link(rel='canonical' href='http://pierrevanmart.com/')
+        link(rel='canonical' href=`http://pierrevanmart.com/${canonical}`)
         link(rel='publisher' href='https://plus.google.com/u/0/+PierrevanMart')
 
         link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
         link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==", crossorigin="anonymous")
         link(href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css')
 
-        link(href='/styles/main.css' rel='stylesheet')
+        each style in styles
+            link(href=`/styles/${style}.css` rel='stylesheet')
 
         link(rel='icon' type='image/png' href='/favicon.png')
 

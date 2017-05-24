@@ -22,7 +22,7 @@ gulp.task('root', () => {
 
 
 gulp.task('views', () => {
-    return gulp.src(['src/views/*.pug', '!src/views/layout.pug'])
+    return gulp.src(['src/views/*.pug', '!src/views/layout*.pug'])
         .pipe(pug({}))
         .pipe(gulp.dest('./dist/'));
 });
