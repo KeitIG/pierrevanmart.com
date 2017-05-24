@@ -1,0 +1,122 @@
+extend layout
+
+block vars
+    - var view = 'cv'
+    - var title = 'CV'
+    - var description = 'My personal CV.'
+    - var canonical = 'cv'
+    - var styles = ['cv']
+
+block content
+    #cv
+        .container
+            section.row
+                .col-sm
+                    h1 Pierre de la Martinière
+                    h2 Javascript Developer
+                    address.address
+                        .row
+                            .col-sm
+                                | Avenue de Préfaully 4
+                                br
+                                | 1022 Chavannes-près-Renens
+                                br
+                                | Switzerland
+                            .col-sm
+                                | french, single
+                                br
+                                | born on April 20th, 1994
+
+                    .others
+                        table
+                            tr
+                                td cell:
+                                td +41 78 834 74 91
+                            tr
+                                td email:
+                                td pierre.de.la.martiniere(at)gmail(dot)com
+                            tr
+                                td skype:
+                                td pierre.de.la.martiniere
+                            tr
+                                td website:
+                                td
+                                    a(href='https://pierrevanmart.com' target='_blank') https://pierrevanmart.com
+                            tr
+                                td github:
+                                td
+                                    a(href='https://github.com/KeitIG' target='_blank') https://github.com/KeitIG
+
+            section.row
+                .col-sm
+                    h3.mb-3 Experience
+
+                    .row.mb-5
+                        .col-sm-2.period
+                            | Jan 2016 - May 2017
+                        .col-sm-10
+                            h5 Full-stack JavaScript developer
+                            h6 Teleport.ninja
+                            .desc.text-muted
+                                p Teleport is a web video web supercharger that turns any video into a scrollable and rich experience. This project is mainly made with Meteor, using Blaze and MongoDB.
+
+                    .row.mb-5
+                        .col-sm-2.period
+                            | Dec 2015 - Jan 2016
+                        .col-sm-10
+                            h5 Software Consultant
+                            h6 Blue-Infinity
+                            .desc.text-muted
+                                p E-commerce solutions development
+
+                    .row.mb-5
+                        .col-sm-2.period
+                            | Sep 2015 - Nov 2015
+                        .col-sm-10
+                            h5 Full-stack JavaScript developer
+                            h6 Investivity
+                            .desc.text-muted
+                                p Freelance mandate for the realisation of a SPA (single page application) using ES6, React.js, Flux pattern and d3.js.
+
+                    .row.mb-5
+                        .col-sm-2.period
+                            | Mar 2015 - Jul 2015
+                        .col-sm-10
+                            h5 Web Developer
+                            h6 Kainjoo
+                            .desc.text-muted
+                                ul
+                                    li Front-end/back-end web development (mostly PHP)
+                                    li Websites creation, development, integration and deployment
+                                    li Development and optimization of Web applications
+                                    li Applications / sites user support
+                                    li Client servers supervision
+
+
+                    .row.mb-5
+                        .col-sm-2.period
+                            | Sep 2015 - Nov 2015
+                        .col-sm-10
+                            h5 Web Developer
+                            h6 Astate
+                            .desc.text-muted
+                                ul
+                                    li Front-end/back-end web development
+                                    li Web application development (Laravel)
+                                    li Wordpress solutions development
+                                    li Development of corporate IT solutions.
+                                    li Maintenance of security systems.
+
+
+
+
+            section.row
+                .col-sm
+                    h3.mb-3 Education
+
+                    .row.mb-5
+                        .col-sm-2.period
+                            | 2012-2014
+                        .col-sm-10
+                            h5 Ecole Polytechnique Fédérale de Lausanne
+                            .text-muted (no graduation)

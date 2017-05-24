@@ -1,7 +1,7 @@
 doctype
 html(lang='en')
+    block vars
     head
-        block vars
         title!= `Pierre de la Martinière - ${title}`
 
         meta(name='viewport' content='width=device-width, initial-scale=1')
@@ -34,13 +34,8 @@ html(lang='en')
 
     body
 
-        .container-fluid
-            .main-content
-                block content
-
-                .row.margin-t-sm
-                    .col-sm-12
-                        noscript Your browser doesn't accept javascript, that's too bad :(
+        .main-content(class=`view-${view}`)
+            block content
 
         script.
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

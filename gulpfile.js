@@ -29,7 +29,7 @@ gulp.task('views', () => {
 
 
 gulp.task('styles', () => {
-    return gulp.src('src/styles/main.styl')
+    return gulp.src('src/styles/*.styl')
         .pipe(stylus())
         .pipe(gulp.dest('./dist/styles'));
 });
