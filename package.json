@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/KeitIG/pierrevanmart.com#readme",
   "scripts": {
-    "compile": "gulp"
+    "compile": "gulp",
+    "dev": "gulp dev"
   },
   "dependencies": {
     "gulp": "^3.9.1",
