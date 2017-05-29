@@ -10,12 +10,12 @@ block vars
 block content
     #cv
         .container
-            section.row
-                .col-sm
+            section.row.mb-5
+                .col-sm-9
                     h1 Pierre de la Martinière
                     h2 Javascript Developer
                     address.address
-                        .row
+                        .row.mb-2
                             .col-sm
                                 | Avenue de Préfaully 4
                                 br
@@ -27,61 +27,65 @@ block content
                                 br
                                 | born on April 20th, 1994
 
-                    .others
-                        table
-                            tr
-                                td cell:
-                                td +41 78 834 74 91
-                            tr
-                                td email:
-                                td pierre.de.la.martiniere(at)gmail(dot)com
-                            tr
-                                td skype:
-                                td pierre.de.la.martiniere
-                            tr
-                                td website:
-                                td
-                                    a(href='https://pierrevanmart.com' target='_blank') https://pierrevanmart.com
-                            tr
-                                td github:
-                                td
-                                    a(href='https://github.com/KeitIG' target='_blank') https://github.com/KeitIG
+                        .row
+                            .col-sm
+                                table
+                                    tr
+                                        td cell:
+                                        td +41 78 834 74 91
+                                    tr
+                                        td email:
+                                        td pierre.de.la.martiniere(at)gmail(dot)com
+                                    tr
+                                        td skype:
+                                        td pierre.de.la.martiniere
+                                    tr
+                                        td website:
+                                        td
+                                            a(href='https://pierrevanmart.com' target='_blank') https://pierrevanmart.com
+                                    tr
+                                        td github:
+                                        td
+                                            a(href='https://github.com/KeitIG' target='_blank') https://github.com/KeitIG
+
+                .col-sm-3
+                    img(src='/images/myself.jpg' alt='myself' class='myself')
 
             section.row
                 .col-sm
                     h3.mb-3 Experience
 
-                    .row.mb-5
-                        .col-sm-2.period
+                    .row.mb-3
+                        .col-sm-3.period
                             | Jan 2016 - May 2017
-                        .col-sm-10
+                        .col-sm-9
                             h5 Full-stack JavaScript developer
                             h6 Teleport.ninja
                             .desc.text-muted
                                 p Teleport is a web video web supercharger that turns any video into a scrollable and rich experience. This project is mainly made with Meteor, using Blaze and MongoDB.
 
-                    .row.mb-5
-                        .col-sm-2.period
+                    .row.mb-3
+                        .col-sm-3.period
                             | Dec 2015 - Jan 2016
-                        .col-sm-10
+                        .col-sm-9
                             h5 Software Consultant
                             h6 Blue-Infinity
                             .desc.text-muted
                                 p E-commerce solutions development
 
-                    .row.mb-5
-                        .col-sm-2.period
+                    .row.mb-3
+                        .col-sm-3.period
                             | Sep 2015 - Nov 2015
-                        .col-sm-10
+                        .col-sm-9
                             h5 Full-stack JavaScript developer
                             h6 Investivity
                             .desc.text-muted
                                 p Freelance mandate for the realisation of a SPA (single page application) using ES6, React.js, Flux pattern and d3.js.
 
-                    .row.mb-5
-                        .col-sm-2.period
+                    .row.mb-3
+                        .col-sm-3.period
                             | Mar 2015 - Jul 2015
-                        .col-sm-10
+                        .col-sm-9
                             h5 Web Developer
                             h6 Kainjoo
                             .desc.text-muted
@@ -93,10 +97,10 @@ block content
                                     li Client servers supervision
 
 
-                    .row.mb-5
-                        .col-sm-2.period
+                    .row.mb-3
+                        .col-sm-3.period
                             | Sep 2015 - Nov 2015
-                        .col-sm-10
+                        .col-sm-9
                             h5 Web Developer
                             h6 Astate
                             .desc.text-muted
@@ -107,16 +111,138 @@ block content
                                     li Development of corporate IT solutions.
                                     li Maintenance of security systems.
 
+            section.row
+                .col-sm
+                    h3.mb-3 Skills
 
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 JavaScript (back)
+                            .text-muted
+                                ul
+                                    li Node.js
 
+                                    li Frameworks: Meteor
+
+                                    li Others:
+                                        ul
+                                            li Data visualization d3.js
+                                            li Maps: Google Maps, Mapbox
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 JavaScript (front)
+                            .text-muted
+                                ul
+                                    li View libraries: ReactJS, Blaze
+
+                                    li Patterns: Flux (Vanilla, Redux)
+
+                                    li HTML5 APIs: Canvas, SVG, Animation Timing, Drag and Drop, WebStorage, IndexedDB, Fullscreen
+
+                                    li Others:
+                                        ul
+                                            li Data visualization: d3.js
+                                            li Maps: Google Maps, Mapbox
+                                            li Sockets: Socket.IO
+
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 HTML5/CSS3
+                            .text-muted
+                                ul
+                                    li Responsive design
+                                    li Frameworks: Bootstrap, Foundation
+                                    li HTML preprocessors: Pug (formerly Jade), EJS, HandleBars/mustache.js
+                                    li CSS preprocessors: Sass, Less, Stylus
+                                    li See the JS section for HTML5 APIs
+
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 PHP
+                            .text-muted
+                                em Please note I am not really interested in working with PHP anymore.
+                                ul
+                                    li Laravel, Wordpress, OOP
+
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 Others
+                            .text-muted
+                                ul
+                                    li Version Control System: Git
+                                    li Database
+                                        ul
+                                            li NoSQL MongoDB and derivatives: NeDB, LinvoDB3, IndexedDB/level-js
+                                            li SQL: MySQL
+                                            li WebSQL:
+                                    li Others
+                                        ul
+                                            li Digital Ocean, AWS
+                                            li Full server set-up (Debian/Ubuntu)
+                                            li HTTP server: Nginx, Apache
+                                            li SSL certificates
+                                            li Webservices: RESTful
+
+            section.row
+                .col-sm
+                    h3.mb-3 Projects and volunteering
+
+                    .row.mb-3
+                        .col-sm-3.period
+                            | early 2015 - today
+                        .col-sm-9
+                            h5 Museeks
+                            .text-muted
+                                p Museeks simple, clean and cross-platform music player built on web technologies and focused on minimal but well-crafted features and design. It uses Node, Electron (formerly Atom Shell), React, Flux (Redux), Weback and LinvoDB3. It is open-sourced on Github.
+
+                    .row.mb-3
+                        .col-sm-3.period
+                            | Sep 2014 - April 2016
+                        .col-sm-9
+                            h5 elementary
+                            .text-muted
+                                p elementary is an Ubuntu derivative created by designers and developers with the will to have a consistent ecosystem between every app of the distribution. I worked there in the web team, maintaining the website http://elementary.io
+                                p Also, elementaryOS-fr is the french community that I'm still a part of, mainly as a maintainer.
 
             section.row
                 .col-sm
                     h3.mb-3 Education
 
-                    .row.mb-5
-                        .col-sm-2.period
-                            | 2012-2014
-                        .col-sm-10
+                    .row.mb-3
+                        .col-sm-3.period
+                            | 2012 - 2014
+                        .col-sm-9
                             h5 Ecole Polytechnique Fédérale de Lausanne
-                            .text-muted (no graduation)
+                            .text-muted
+                                p (no graduation)
+
+                    .row.mb-3
+                        .col-sm-3.period
+                            | 2009 - 2012
+                        .col-sm-9
+                            h5 Lycée Catholique de Pontlevoy
+                            .text-muted
+                                p Baccalauréat Scientifique (maths specialization, "Assez Bien" mention)
+
+            section.row
+                .col-sm
+                    h3.mb-3 Languages
+
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 French
+                            .text-muted
+                                p Native or bilingual proficiency
+
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 English
+                            .text-muted
+                                p Professional working proficiency
