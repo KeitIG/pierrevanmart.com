@@ -11,18 +11,16 @@ block content
     #cv
         .container
             section.row.mb-5
-                .col-9
-                    h1 Pierre de la Martinière
-                    h2 Javascript Developer
+                .col-6
                     address.address
                         .row.mb-2
-                            .col-sm
+                            .col-6
                                 | Avenue de Préfaully 4
                                 br
                                 | 1022 Chavannes-près-Renens
                                 br
                                 | Switzerland
-                            .col-sm
+                            .col-6
                                 | french, single
                                 br
                                 | born on April 20th, 1994
@@ -48,7 +46,11 @@ block content
                                         td
                                             a(href='https://github.com/KeitIG' target='_blank') https://github.com/KeitIG
 
-                .col-3
+                .col-4
+                    h1.name Pierre de la Martinière
+                    h2.role.text-muted Javascript Developer
+
+                .col-2
                     img(src='/images/myself.jpg' alt='myself' class='myself')
 
             section.row
@@ -80,7 +82,7 @@ block content
                             h5 Full-stack JavaScript developer
                             h6 Investivity
                             .desc.text-muted
-                                p Freelance mandate for the realisation of a SPA (single page application) using ES6, React.js, Flux and d3.js.
+                                p Freelance mandate for the realisation of a SPA (single page application) using ES6, React, Flux and d3.js.
 
                     .row.mb-3
                         .col-sm-3.period
@@ -112,11 +114,12 @@ block content
                                 ul
                                     li Node.js
                                     li Full-stack frameworks: Meteor
-                                    li View libraries: ReactJS, Blaze
+                                    li View libraries: React, Blaze
                                     li Patterns: Flux (Vanilla, Redux)
                                     li HTML5 APIs: Canvas, SVG, Animation Timing, Drag and Drop, WebStorage, IndexedDB, Fullscreen
                                     li Others:
                                         ul
+                                            li Bundlers/Tasks managers: Webpack, gulp
                                             li Data visualization: d3.js
                                             li Maps: Google Maps, Mapbox
                                             li Sockets: Socket.IO
@@ -128,7 +131,7 @@ block content
                             .text-muted
                                 ul
                                     li Frameworks: Bootstrap, Foundation
-                                    li HTML preprocessors: Pug (formerly Jade), EJS, HandleBars/mustache.js
+                                    li HTML preprocessors: Pug (formerly Jade), HandleBars/mustache.js
                                     li CSS preprocessors: Sass, Less, Stylus
 
                     .row.mb-3
@@ -154,11 +157,8 @@ block content
                                             li WebSQL:
                                     li Others
                                         ul
-                                            li Digital Ocean, AWS
-                                            li Full server set-up (Debian/Ubuntu)
-                                            li HTTP server: Nginx, Apache
-                                            li SSL certificates
-                                            li Webservices: RESTful
+                                            li Experience with Digital Ocean and AWS
+                                            li Full server set-up (Debian/Ubuntu, security, nginx, SSL certificates)
 
             section.row
                 .col-sm
@@ -187,7 +187,7 @@ block content
 
                     .row.mb-3
                         .col-sm-3.period
-                            | 2012 - 2014
+                            | Set 2012 - Feb 2014
                         .col-sm-9
                             h5 Ecole Polytechnique Fédérale de Lausanne (Switzerland)
                             .text-muted
@@ -195,7 +195,7 @@ block content
 
                     .row.mb-3
                         .col-sm-3.period
-                            | 2009 - 2012
+                            | July 2012
                         .col-sm-9
                             h5 Lycée de Pontlevoy (France)
                             .text-muted
@@ -218,3 +218,22 @@ block content
                             h5 English
                             .text-muted
                                 p Professional working proficiency
+
+            section.row
+                .col-sm
+                    h3.mb-3 Hobbies
+
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 Music
+                            .text-muted
+                                p Piano, bass, ukulele and vocals
+
+                    .row.mb-3
+                        .col-sm-3.period
+                        .col-sm-9
+                            h5 Photography
+                            .text-muted
+                                p
+                                    a(href='https://500px.com/pierrevanmart' target='_blank') Street-photography

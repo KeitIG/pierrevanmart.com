@@ -1,20 +1,6 @@
-html
-    font-size 12px
-
-@media print
-    ::first-letter
-        margin 0
-        padding 0
-
-
 .view-cv
     margin-top 10vh
     margin-bottom 10vh
-
-    .container
-
-        @media (min-width: 992px)
-            max-width 21cm
 
     ul
         list-style square
@@ -23,6 +9,12 @@ html
     .address
         font-size .875rem
 
+    .name
+        font-size 2rem
+
+    .role
+        font-size 1.7rem
+
     .myself
         display block
         max-width 100%
@@ -30,3 +22,19 @@ html
         border solid 1px rgba(100, 100, 100, 0.75)
         width 150px
         margin auto
+
+@media print
+
+    html
+        font-size 11px
+
+    ::first-letter
+        margin 0
+        padding 0
+
+    .view-cv
+        margin-top 0
+        margin-bottom 0
+
+    .container
+        max-width 21cm
