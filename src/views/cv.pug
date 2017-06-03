@@ -10,14 +10,14 @@ block vars
 block content
     #cv
         .container
-            div.row.mb-4
+            div.row
                 .col-sm-6.mb-4
                     .row
-                        .col-8
+                        .col-9.col-sm-8
                             h1.name Pierre de la Martinière
                             h2.role.text-muted Javascript Developer
 
-                        .col-4
+                        .col-3.col-sm-4
                             img(src='/images/myself.jpg' alt='myself' class='myself')
 
                 .col-sm-6
@@ -104,67 +104,59 @@ block content
                             .desc.text-muted
                                 p Websites and Web applications creation, development, deployment & maintenance. Development of corporate IT solutions.
 
-            hr.separator
-
             section.section.row
                 .col-sm
                     h3.activity-title Skills
 
-                    .activity.row
-                        .col-sm-3.period
-                        .col-sm-9
-                            h5 JavaScript
-                            .text-muted
-                                ul
-                                    li Node.js
-                                    li Full-stack frameworks: Meteor
-                                    li View libraries: React, Blaze
-                                    li Patterns: Flux (Vanilla, Redux)
-                                    li HTML5 APIs: Canvas, SVG, Animation Timing, Drag and Drop, WebStorage, IndexedDB, Fullscreen
-                                    li Others:
-                                        ul
-                                            li Bundlers/Tasks managers: Webpack, gulp
-                                            li Data visualization: d3.js
-                                            li Maps: Google Maps, Mapbox
-                                            li Sockets: Socket.IO
+                    .row
+                        .offset-sm-3.col-sm-9
+                            .row
+                                .col-sm-6
+                                    .activity
+                                        h5 JavaScript
+                                        .text-muted
+                                            ul
+                                                li Node.js
+                                                li Full-stack frameworks: Meteor
+                                                li View libraries: React, Blaze
+                                                li Patterns: Flux (Vanilla, Redux)
+                                                li HTML5 APIs: Canvas, SVG, Animation Timing, Drag and Drop, WebStorage, IndexedDB, Fullscreen
+                                                li Others:
+                                                    ul
+                                                        li Bundlers/Tasks managers: Webpack, gulp
+                                                        li Data visualization: d3.js
+                                                        li Maps: Google Maps, Mapbox
+                                                        li Sockets: Socket.IO
 
-                    .activity.row
-                        .col-sm-3.period
-                        .col-sm-9
-                            h5 HTML5/CSS3
-                            .text-muted
-                                ul
-                                    li Frameworks: Bootstrap, Foundation
-                                    li HTML preprocessors: Pug (formerly Jade), HandleBars/mustache.js
-                                    li CSS preprocessors: Sass, Less, Stylus
+                                    .activity
+                                        h5 HTML5/CSS3
+                                        .text-muted
+                                            ul
+                                                li Frameworks: Bootstrap, Foundation
+                                                li HTML preprocessors: Pug (formerly Jade), HandleBars/mustache.js
+                                                li CSS preprocessors: Sass, Less, Stylus
 
-                    .activity.row
-                        .col-sm-3.period
-                        .col-sm-9
-                            h5 PHP
-                            .text-muted
-                                em Please note I am not really interested in working with PHP anymore.
-                                ul
-                                    li Laravel, Wordpress, OOP
+                                .col-sm-6
+                                    .activity
+                                        h5 PHP
+                                        .text-muted
+                                            em Please note I am not really interested in working with PHP anymore.
+                                            ul
+                                                li Laravel, Wordpress, OOP
 
-                    .activity.row
-                        .col-sm-3.period
-                        .col-sm-9
-                            h5 Others
-                            .text-muted
-                                ul
-                                    li Version Control System: Git
-                                    li Database
-                                        ul
-                                            li NoSQL MongoDB and derivatives: NeDB, LinvoDB3, IndexedDB/level-js
-                                            li SQL: MySQL
-                                            li WebSQL:
-                                    li Others
-                                        ul
-                                            li Experience with Digital Ocean and AWS
-                                            li Full server set-up (Debian/Ubuntu, security, nginx, SSL certificates)
-
-            hr.separator
+                                    .activity
+                                        h5 Others
+                                        .text-muted
+                                            ul
+                                                li Version Control System: Git
+                                                li Database
+                                                    ul
+                                                        li NoSQL MongoDB and derivatives: NeDB, LinvoDB3, IndexedDB/level-js
+                                                        li SQL: MySQL
+                                                li Others
+                                                    ul
+                                                        li Experience with Digital Ocean and AWS
+                                                        li Full server set-up (Debian/Ubuntu, security, nginx, SSL certificates)
 
             section.section.row
                 .col-sm
@@ -187,8 +179,6 @@ block content
                                 p elementary is an Ubuntu derivative created by designers and developers with the will to have a consistent ecosystem between every app of the distribution. I worked there in the web team, maintaining the website http://elementary.io
                                 p Also, elementaryOS-fr is the french community that I'm still a part of, mainly as a maintainer.
 
-            hr.separator
-
             section.section.row
                 .col-sm
                     h3.activity-title Education
@@ -209,8 +199,6 @@ block content
                             .text-muted
                                 p French scientific Baccalauréat (maths specialization, "Assez Bien" mention)
 
-            hr.separator
-
             section.section.row
                 .col-sm
                     h3.activity-title Languages
@@ -228,8 +216,6 @@ block content
                             h5 English
                             .text-muted
                                 p Professional working proficiency
-
-            hr.separator
 
             section.section.row
                 .col-sm
