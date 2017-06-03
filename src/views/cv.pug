@@ -10,8 +10,17 @@ block vars
 block content
     #cv
         .container
-            section.row.mb-5
-                .col-6
+            div.row.mb-4
+                .col-sm-6.mb-4
+                    .row
+                        .col-8
+                            h1.name Pierre de la Martinière
+                            h2.role.text-muted Javascript Developer
+
+                        .col-4
+                            img(src='/images/myself.jpg' alt='myself' class='myself')
+
+                .col-sm-6
                     address.address
                         .row.mb-2
                             .col-6
@@ -46,36 +55,29 @@ block content
                                         td
                                             a(href='https://github.com/KeitIG' target='_blank') https://github.com/KeitIG
 
-                .col-4
-                    h1.name Pierre de la Martinière
-                    h2.role.text-muted Javascript Developer
-
-                .col-2
-                    img(src='/images/myself.jpg' alt='myself' class='myself')
-
-            section.row
+            section.section.row
                 .col-sm
-                    h3.mb-3 Experience
+                    h3.activity-title Experience
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                             | Jan 2016 - May 2017
                         .col-sm-9
                             h5 Full-stack JavaScript developer
                             h6 Teleport.ninja
                             .desc.text-muted
-                                p Teleport is a web video web supercharger that turns any video into a scrollable and rich experience. This project is mainly made with Meteor, using Blaze and MongoDB.
+                                p Teleport is a web video web supercharger that turns any video into a scrollable and rich website. This project was mainly made with Meteor, using Blaze and MongoDB.
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                             | Dec 2015 - Jan 2016
                         .col-sm-9
                             h5 Software Consultant
                             h6 Blue-Infinity
                             .desc.text-muted
-                                p E-commerce solutions development
+                                p E-commerce solutions development.
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                             | Sep 2015 - Nov 2015
                         .col-sm-9
@@ -84,7 +86,7 @@ block content
                             .desc.text-muted
                                 p Freelance mandate for the realisation of a SPA (single page application) using ES6, React, Flux and d3.js.
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                             | Mar 2015 - Jul 2015
                         .col-sm-9
@@ -93,7 +95,7 @@ block content
                             .desc.text-muted
                                 p Websites creation, development, deployment & maintenance
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                             | March 2014 - February 2014
                         .col-sm-9
@@ -102,11 +104,13 @@ block content
                             .desc.text-muted
                                 p Websites and Web applications creation, development, deployment & maintenance. Development of corporate IT solutions.
 
-            section.row
-                .col-sm
-                    h3.mb-3 Skills
+            hr.separator
 
-                    .row.mb-3
+            section.section.row
+                .col-sm
+                    h3.activity-title Skills
+
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 JavaScript
@@ -124,7 +128,7 @@ block content
                                             li Maps: Google Maps, Mapbox
                                             li Sockets: Socket.IO
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 HTML5/CSS3
@@ -134,7 +138,7 @@ block content
                                     li HTML preprocessors: Pug (formerly Jade), HandleBars/mustache.js
                                     li CSS preprocessors: Sass, Less, Stylus
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 PHP
@@ -143,7 +147,7 @@ block content
                                 ul
                                     li Laravel, Wordpress, OOP
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 Others
@@ -160,11 +164,13 @@ block content
                                             li Experience with Digital Ocean and AWS
                                             li Full server set-up (Debian/Ubuntu, security, nginx, SSL certificates)
 
-            section.row
-                .col-sm
-                    h3.mb-3 Projects and volunteering
+            hr.separator
 
-                    .row.mb-3
+            section.section.row
+                .col-sm
+                    h3.activity-title Projects and volunteering
+
+                    .activity.row
                         .col-sm-3.period
                             | early 2015 - today
                         .col-sm-9
@@ -172,7 +178,7 @@ block content
                             .text-muted
                                 p Museeks simple, clean and cross-platform music player built on web technologies and focused on minimal but well-crafted features and design. It uses Node, Electron (formerly Atom Shell), React, Flux (Redux), Weback and LinvoDB3. It is open-sourced on Github.
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                             | Sep 2014 - April 2016
                         .col-sm-9
@@ -181,11 +187,13 @@ block content
                                 p elementary is an Ubuntu derivative created by designers and developers with the will to have a consistent ecosystem between every app of the distribution. I worked there in the web team, maintaining the website http://elementary.io
                                 p Also, elementaryOS-fr is the french community that I'm still a part of, mainly as a maintainer.
 
-            section.row
-                .col-sm
-                    h3.mb-3 Education
+            hr.separator
 
-                    .row.mb-3
+            section.section.row
+                .col-sm
+                    h3.activity-title Education
+
+                    .activity.row
                         .col-sm-3.period
                             | Set 2012 - Feb 2014
                         .col-sm-9
@@ -193,7 +201,7 @@ block content
                             .text-muted
                                 p (no graduation)
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                             | July 2012
                         .col-sm-9
@@ -201,36 +209,40 @@ block content
                             .text-muted
                                 p French scientific Baccalauréat (maths specialization, "Assez Bien" mention)
 
-            section.row
-                .col-sm
-                    h3.mb-3 Languages
+            hr.separator
 
-                    .row.mb-3
+            section.section.row
+                .col-sm
+                    h3.activity-title Languages
+
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 French
                             .text-muted
                                 p Native or bilingual proficiency
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 English
                             .text-muted
                                 p Professional working proficiency
 
-            section.row
-                .col-sm
-                    h3.mb-3 Hobbies
+            hr.separator
 
-                    .row.mb-3
+            section.section.row
+                .col-sm
+                    h3.activity-title Hobbies
+
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 Music
                             .text-muted
                                 p Piano, bass, ukulele and vocals
 
-                    .row.mb-3
+                    .activity.row
                         .col-sm-3.period
                         .col-sm-9
                             h5 Photography
