@@ -1,102 +1,105 @@
 extend layout
 
 block vars
-    - var view = 'home'
-    - var title = 'Here I am'
-    - var description = 'Hi ! I\'m Pierre de la Martinière, a full-stack web developer, street-photographer and musician. I love nice code, prime lenses, jams and belgian beers.'
-    - var canonical = ''
-    - var styles = ['main']
+  - var view = 'home'
+  - var title = 'Here I am'
+  - var description = 'Hi ! I\'m Pierre de la Martinière, a full-stack web developer, street-photographer and musician. I love nice code, prime lenses, jams and belgian beers.'
+  - var canonical = ''
+  - var styles = ['main']
 
 block content
-    .container-fluid
-        .row
-            .col-md-2.offset-lg-1.mb-3
-                img(src='/images/myself.jpg' alt='myself' class='myself')
+  .container-fluid
+    .row
+      .col-md-2.offset-lg-1.mb-3
+        img(src='/images/myself.jpg' alt='myself' class='myself')
 
-            .col-md-6.col-lg-5.mb-3
+      section.col-md-6.col-lg-5.mb-3
 
-                h1.h3.white Hi! I’m Pierre de la Martinière,
+        h1.h3.white Hi! I’m Pierre de la Martinière,
 
-                h2.h3.mb-4
-                    | a french guy, currently living in Switerland
-                    br
-                    | full-stack
-                    span.white  web developer
-                    br
-                    | but also a
-                    span.white  musician
-                    |  and a
-                    span.white  photographer
-                    | .
+        p.h3.mb-4
+          | a french guy, currently living in Switerland
+          br
+          | full-stack
+          span.white  web developer
+          br
+          | but also a
+          span.white  musician
+          |  and a
+          span.white  photographer
+          | .
 
-                .links.mb-4
-                    a(href='https://github.com/KeitIG' title='What I code') Github
-                    =', '
-                    a(href='https://500px.com/pierrevanmart' title='What I streetshoot') 500px
-                    =', '
-                    a(href='https://linkedin.com/in/pierredelamartiniere' title='What I have done') LinkedIn
-                    =', '
-                    a(href='https://twitter.com/KeitIG' title='What I think') Twitter
+        .links.mb-4
+          a(href='https://github.com/KeitIG' title='What I code') Github
+          =', '
+          a(href='https://500px.com/pierrevanmart' title='What I streetshoot') 500px
+          =', '
+          a(href='https://linkedin.com/in/pierredelamartiniere' title='What I have done') LinkedIn
+          =', '
+          a(href='https://twitter.com/KeitIG' title='What I think') Twitter
 
-                p
-                    | write to me at pierre.de.la.martiniere(at)gmail(dot)com.
-                    
-                p
-                    | looking for my
-                    =' '
-                    a(href='/resume') resume
-                    | ?
+        p
+          | write to me at pierre.de.la.martiniere(at)gmail(dot)com.
+          
+        p
+          | looking for my
+          =' '
+          a(href='/resume') resume
+          | ?
 
-            .col-md-3.stuff-list
+      aside.col-md-3.stuff-list
 
-                .stuff
+        .stuff
 
-                    h4.white current big project
-                        =' '
-                        span(class='fa fa-code')
+          h2.white current big project
+            =' '
+            span(class='fa fa-code')
 
-                    .link-container
-                        a(href='http://museeks.io' title='A cross platform music player') museeks
-                        =' '
-                        | (
-                        a(href='https://github.com/KeitIG/museeks' title='Sources') sources
-                        | )
+          .link-container
+            a(href='http://museeks.io' title='A cross platform music player') museeks
+            =' '
+            | (
+            a(href='https://github.com/KeitIG/museeks' title='Sources') sources
+            | )
 
-                .stuff
+        .stuff
 
-                    h4.white latest pieces of code
-                        =' '
-                        span(class='fa fa-github')
+          h2.white latest pieces of code
+            =' '
+            span(class='fa fa-github')
 
-                    .link-container
-                        a(href='https://github.com/KeitIG/teeny-conf' title='A small npm package to handle config files in Node apps. Works fine with Electron and NW.js') teeny-conf
+          .link-container
+            a(href='https://github.com/KeitIG/teeny-conf' title='A small npm package to handle config files in Node apps. Works fine with Electron and NW.js') teeny-conf
 
-                    .link-container
-                        a(href='https://github.com/KeitIG/express-boilerplate-for-lazy-people' title='A boilerplate for lazy people: node, express, jade, stylus, bootstrap, gzip, minify, force-domain') express-boilerplate-for-lazy-people
+          .link-container
+            a(href='https://github.com/KeitIG/express-boilerplate-for-lazy-people' title='A boilerplate for lazy people: node, express, jade, stylus, bootstrap, gzip, minify, force-domain') express-boilerplate-for-lazy-people
 
-                    .link-container
-                        a(href='https://github.com/KeitIG/react-simple-input' title='A simple text input for React') react-simple-input
+          .link-container
+            a(href='https://github.com/KeitIG/react-simple-input' title='A simple text input for React') react-simple-input
 
-                    .link-container
-                        a(href='https://github.com/KeitIG/react-keybinding-component' title='A React keybinding component, usable with es6, no mixin') react-keybinding-component
+          .link-container
+            a(href='https://github.com/KeitIG/react-keybinding-component' title='A React keybinding component, usable with es6, no mixin') react-keybinding-component
 
-                .stuff
+        .stuff
 
-                    h4.white latest street shots
-                        =' '
-                        span(class='fa fa-500px')
+          h2.white latest street shots
+            =' '
+            span(class='fa fa-500px')
 
-                    .link-container
-                        a(href='https://500px.com/photo/125554081/hey-kid-by-pierre-de-la-martini%C3%A8re' title='Hey Kid !') Hey Kid !
+          .link-container
+            a(href='https://500px.com/photo/218313811/lost-my-friends-by-pierre-de-la-martini%C3%A8re') Lost my friends
+            
+          .link-container
+            a(href='https://500px.com/photo/218313841/unicorn-by-pierre-de-la-martini%C3%A8re') Unicorn
 
-                    .link-container
-                        a(href='https://500px.com/photo/118835663/stage-door-by-pierre-de-la-martini%C3%A8re' title='Stage door') Stage door
+          .link-container
+            a(href='https://500px.com/photo/125554081/hey-kid-by-pierre-de-la-martini%C3%A8re') Hey Kid !
+            
+          .link-container
+            a(href='https://500px.com/photo/95509193/drunkchurch-by-pierre-de-la-martini%C3%A8re') Drunk Church
 
-                    .link-container
-                        a(href='https://500px.com/photo/95509193/drunkchurch-by-pierre-de-la-martini%C3%A8re' title='Drunk Church') Drunk Church
+          .link-container
+            a(href='https://500px.com/photo/92353771/tim-by-pierre-de-la-martini%C3%A8re') Tim
 
-                    .link-container
-                        a(href='https://500px.com/photo/92353771/tim-by-pierre-de-la-martini%C3%A8re' title='Tim') Tim
-
-                    .link-container
-                        a(href='https://500px.com/pierrevanmart' title='See more street photos...') See more...
+          .link-container
+            a(href='https://500px.com/pierrevanmart' title='See more street photos...') See more...

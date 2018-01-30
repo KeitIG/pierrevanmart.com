@@ -1,237 +1,237 @@
 extend layout
 
 block vars
-    - var view = 'resume'
-    - var title = 'Resume'
-    - var description = 'My personal resume.'
-    - var canonical = 'resume'
-    - var styles = ['resume']
+  - var view = 'resume'
+  - var title = 'Resume'
+  - var description = 'My personal resume.'
+  - var canonical = 'resume'
+  - var styles = ['resume']
 
 block content
-    #cv
-        .container
-            div.row
-                .col-md-6.mb-3.d-flex.myself
-                    .portrait
-                        img(src='/images/myself-formal.png' alt='myself' class='image' title='myself')
-                    .desc
-                        h1.name Pierre de la Martinière
-                        h2.role.text-muted Front-End Developer
+  #cv
+    .container
+      div.row
+        .col-md-6.mb-3.d-flex.myself
+          .portrait
+            img(src='/images/myself-formal.png' alt='myself' class='image' title='myself')
+          .desc
+            h1.name Pierre de la Martinière
+            h2.role.text-muted Front-End Developer
 
-                .col-md-6
-                    address.address.mb-0.p-3
-                        .row.mb-2
-                            .col-6
-                                | Avenue de Préfaully 4
-                                br
-                                | 1022 Chavannes-près-Renens
-                                br
-                                | Switzerland
-                            .col-6
-                                | french, single
-                                br
-                                | born on April 20th, 1994
+        .col-md-6
+          address.address.mb-0.p-3
+            .row.mb-2
+              .col-6
+                | Avenue de Préfaully 4
+                br
+                | 1022 Chavannes-près-Renens
+                br
+                | Switzerland
+              .col-6
+                | french, single
+                br
+                | born on April 20th, 1994
 
-                        .row
-                            .col-sm
-                                table
-                                    tr
-                                        td cell:
-                                        td +41 78 834 74 91
-                                    tr
-                                        td email:
-                                        td pierre.de.la.martiniere(at)gmail(dot)com
-                                    tr
-                                        td skype:
-                                        td pierre.de.la.martiniere
-                                    tr
-                                        td website:
-                                        td
-                                            a(href='https://pierrevanmart.com') https://pierrevanmart.com
-                                    tr
-                                        td github:
-                                        td
-                                            a(href='https://github.com/KeitIG') https://github.com/KeitIG
+            .row
+              .col-sm
+                table
+                  tr
+                    td cell:
+                    td +41 78 834 74 91
+                  tr
+                    td email:
+                    td pierre.de.la.martiniere(at)gmail(dot)com
+                  tr
+                    td skype:
+                    td pierre.de.la.martiniere
+                  tr
+                    td website:
+                    td
+                      a(href='https://pierrevanmart.com') https://pierrevanmart.com
+                  tr
+                    td github:
+                    td
+                      a(href='https://github.com/KeitIG') https://github.com/KeitIG
 
-            section.section.row.mb-3
-                .col-sm
-                    h3.section-title Experience
+      section.section.row.mb-3
+        .col-sm
+          h3.section-title Experience
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | Sept 2017 - current
-                        .col-sm-9.col-lg-10
-                            h5.activity-title.activity-title Front-end Developer
-                            h6.activity-subtitle Ginetta
-                            .desc.text-muted
-                                p Front-end development of websites and web applications.
-                                
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | Jan 2016 - May 2017
-                        .col-sm-9.col-lg-10
-                            h5.activity-title.activity-title Full-stack JavaScript developer
-                            h6.activity-subtitle Teleport.ninja
-                            .desc.text-muted
-                                p Teleport is a web video supercharger that turns any video into a scrollable and rich website. This project was mainly made with Meteor, using Blaze and MongoDB.
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | Sept 2017 - current
+            .col-sm-9.col-lg-10
+              h5.activity-title.activity-title Front-end Developer
+              h6.activity-subtitle Ginetta
+              .desc.text-muted
+                p Front-end development of websites and web applications.
+                
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | Jan 2016 - May 2017
+            .col-sm-9.col-lg-10
+              h5.activity-title.activity-title Full-stack JavaScript developer
+              h6.activity-subtitle Teleport.ninja
+              .desc.text-muted
+                p Teleport is a web video supercharger that turns any video into a scrollable and rich website. This project was mainly made with Meteor, using Blaze and MongoDB.
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | Dec 2015 - Jan 2016
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Software Consultant
-                            h6.activity-subtitle Blue-Infinity
-                            .desc.text-muted
-                                p E-commerce solutions development.
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | Dec 2015 - Jan 2016
+            .col-sm-9.col-lg-10
+              h5.activity-title Software Consultant
+              h6.activity-subtitle Blue-Infinity
+              .desc.text-muted
+                p E-commerce solutions development.
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | Sep 2015 - Nov 2015
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Full-stack JavaScript developer
-                            h6.activity-subtitle Investivity
-                            .desc.text-muted
-                                p Freelance mandate for the realisation of a SPA (single page application) using ES6, React, Flux and d3.js.
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | Sep 2015 - Nov 2015
+            .col-sm-9.col-lg-10
+              h5.activity-title Full-stack JavaScript developer
+              h6.activity-subtitle Investivity
+              .desc.text-muted
+                p Freelance mandate for the realisation of a SPA (single page application) using ES6, React, Flux and d3.js.
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | Mar 2014 - Jul 2015
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Web Developer
-                            h6.activity-subtitle Astate
-                            .desc.text-muted
-                                p Websites and Web applications creation (Wordpress, Woocommerce, Laravel), development, deployment & maintenance. Development of corporate IT solutions.
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | Mar 2014 - Jul 2015
+            .col-sm-9.col-lg-10
+              h5.activity-title Web Developer
+              h6.activity-subtitle Astate
+              .desc.text-muted
+                p Websites and Web applications creation (Wordpress, Woocommerce, Laravel), development, deployment & maintenance. Development of corporate IT solutions.
 
-            section.section.row.mb-3
-                .col-sm
-                    h3.section-title Skills
+      section.section.row.mb-3
+        .col-sm
+          h3.section-title Skills
 
-                    .row
-                        .offset-sm-3.offset-lg-2.col-sm-9.col-lg-10
-                            .row
-                                .col-sm-6
-                                    .activity
-                                        h5.activity-title JavaScript
-                                        .text-muted
-                                            ul
-                                                li Node.js
-                                                li Full-stack frameworks: Meteor
-                                                li View libraries: React, Blaze
-                                                li Patterns: Flux (Vanilla, Redux)
-                                                li HTML5 APIs: Canvas, SVG, Animation Timing, Drag and Drop, WebStorage, IndexedDB, Fullscreen
-                                                li Others:
-                                                    ul
-                                                        li Bundlers/Tasks managers: Webpack, gulp
-                                                        li Data visualization: d3.js
-                                                        li Maps: Google Maps, Mapbox
-                                                        li Sockets: Socket.IO
-                                                        li Testing: Mocha, assert
+          .row
+            .offset-sm-3.offset-lg-2.col-sm-9.col-lg-10
+              .row
+                .col-sm-6
+                  .activity
+                    h5.activity-title JavaScript
+                    .text-muted
+                      ul
+                        li Node.js
+                        li Full-stack frameworks: Meteor
+                        li View libraries: React, Blaze
+                        li Patterns: Flux (Vanilla, Redux)
+                        li HTML5 APIs: Canvas, SVG, Animation Timing, Drag and Drop, WebStorage, IndexedDB, Fullscreen
+                        li Others:
+                          ul
+                            li Bundlers/Tasks managers: Webpack, gulp
+                            li Data visualization: d3.js
+                            li Maps: Google Maps, Mapbox
+                            li Sockets: Socket.IO
+                            li Testing: Mocha, assert
 
-                                    .activity
-                                        h5.activity-title HTML5/CSS3
-                                        .text-muted
-                                            ul
-                                                li Frameworks: Bootstrap, Foundation
-                                                li HTML preprocessors: Pug (formerly Jade), HandleBars/mustache.js
-                                                li CSS preprocessors: Sass, Less, Stylus
+                  .activity
+                    h5.activity-title HTML5/CSS3
+                    .text-muted
+                      ul
+                        li Frameworks: Bootstrap, Foundation
+                        li HTML preprocessors: Pug (formerly Jade), HandleBars/mustache.js
+                        li CSS preprocessors: Sass, Less, Stylus
 
-                                .col-sm-6
-                                    .activity
-                                        h5.activity-title PHP
-                                        .text-muted
-                                            em Please note I am not really interested in working with PHP anymore.
-                                            ul
-                                                li Laravel, Wordpress, OOP
+                .col-sm-6
+                  .activity
+                    h5.activity-title PHP
+                    .text-muted
+                      em Please note I am not really interested in working with PHP anymore.
+                      ul
+                        li Laravel, Wordpress, OOP
 
-                                    .activity
-                                        h5.activity-title Others
-                                        .text-muted
-                                            ul
-                                                li Version Control System: Git
-                                                li Database
-                                                    ul
-                                                        li NoSQL MongoDB and derivatives: NeDB, LinvoDB3, IndexedDB/level-js
-                                                        li SQL: MySQL
-                                                li Others
-                                                    ul
-                                                        li Experience with Digital Ocean and AWS
-                                                        li Full server set-up (Debian/Ubuntu, security, nginx, SSL certificates)
-                                                        li Work methodology: Scrum, Kan-ban, Scrum-ban
+                  .activity
+                    h5.activity-title Others
+                    .text-muted
+                      ul
+                        li Version Control System: Git
+                        li Database
+                          ul
+                            li NoSQL MongoDB and derivatives: NeDB, LinvoDB3, IndexedDB/level-js
+                            li SQL: MySQL
+                        li Others
+                          ul
+                            li Experience with Digital Ocean and AWS
+                            li Full server set-up (Debian/Ubuntu, security, nginx, SSL certificates)
+                            li Work methodology: Scrum, Kan-ban, Scrum-ban
 
-            section.section.row.mb-3
-                .col-sm
-                    h3.section-title Projects and volunteering
+      section.section.row.mb-3
+        .col-sm
+          h3.section-title Projects and volunteering
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | early 2015 - today
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Museeks
-                            .text-muted
-                                p Museeks is a simple, clean and cross-platform music player built on web technologies and focused on minimal but well-crafted features and design. It uses Node.js, Electron (formerly Atom Shell), React, Flux (Redux), Weback and LinvoDB3. It is open-sourced on Github and was released to the public early 2016.
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | early 2015 - today
+            .col-sm-9.col-lg-10
+              h5.activity-title Museeks
+              .text-muted
+                p Museeks is a simple, clean and cross-platform music player built on web technologies and focused on minimal but well-crafted features and design. It uses Node.js, Electron (formerly Atom Shell), React, Flux (Redux), Weback and LinvoDB3. It is open-sourced on Github and was released to the public early 2016.
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | Sep 2014 - Apr 2016
-                        .col-sm-9.col-lg-10
-                            h5.activity-title elementary
-                            .text-muted
-                                p elementary is an Ubuntu derivative created by designers and developers with the will to have a consistent ecosystem between every app of the distribution. I worked there in the web team, maintaining the website http://elementary.io
-                                p Also, elementaryOS-fr is the french community that I'm still a part of, mainly as a maintainer.
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | Sep 2014 - Apr 2016
+            .col-sm-9.col-lg-10
+              h5.activity-title elementary
+              .text-muted
+                p elementary is an Ubuntu derivative created by designers and developers with the will to have a consistent ecosystem between every app of the distribution. I worked there in the web team, maintaining the website http://elementary.io
+                p Also, elementaryOS-fr is the french community that I'm still a part of, mainly as a maintainer.
 
-            section.section.row.mb-3
-                .col-sm
-                    h3.section-title Education
+      section.section.row.mb-3
+        .col-sm
+          h3.section-title Education
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | Sep 2012 - Feb 2014
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Ecole Polytechnique Fédérale de Lausanne (Switzerland)
-                            .text-muted
-                                p (no graduation)
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | Sep 2012 - Feb 2014
+            .col-sm-9.col-lg-10
+              h5.activity-title Ecole Polytechnique Fédérale de Lausanne (Switzerland)
+              .text-muted
+                p (no graduation)
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                            | July 2012
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Lycée de Pontlevoy (France)
-                            .text-muted
-                                p French Baccalauréat Général (maths specialization, with mention)
+          .activity.row
+            .col-sm-3.col-lg-2.period
+              | July 2012
+            .col-sm-9.col-lg-10
+              h5.activity-title Lycée de Pontlevoy (France)
+              .text-muted
+                p French Baccalauréat Général (maths specialization, with mention)
 
-            section.section.row.mb-3
-                .col-sm
-                    h3.section-title Languages
+      section.section.row.mb-3
+        .col-sm
+          h3.section-title Languages
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                        .col-sm-9.col-lg-10
-                            h5.activity-title French
-                            .text-muted
-                                p Native or bilingual proficiency
+          .activity.row
+            .col-sm-3.col-lg-2.period
+            .col-sm-9.col-lg-10
+              h5.activity-title French
+              .text-muted
+                p Native or bilingual proficiency
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                        .col-sm-9.col-lg-10
-                            h5.activity-title English
-                            .text-muted
-                                p Professional working proficiency
+          .activity.row
+            .col-sm-3.col-lg-2.period
+            .col-sm-9.col-lg-10
+              h5.activity-title English
+              .text-muted
+                p Professional working proficiency
 
-            section.section.row.mb-3
-                .col-sm
-                    h3.section-title Hobbies
+      section.section.row.mb-3
+        .col-sm
+          h3.section-title Hobbies
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Music
-                            .text-muted
-                                p Piano, bass, ukulele and vocals
+          .activity.row
+            .col-sm-3.col-lg-2.period
+            .col-sm-9.col-lg-10
+              h5.activity-title Music
+              .text-muted
+                p Piano, bass, ukulele and vocals
 
-                    .activity.row
-                        .col-sm-3.col-lg-2.period
-                        .col-sm-9.col-lg-10
-                            h5.activity-title Photography
-                            .text-muted
-                                p
-                                    a(href='https://500px.com/pierrevanmart') Events and street-photography
+          .activity.row
+            .col-sm-3.col-lg-2.period
+            .col-sm-9.col-lg-10
+              h5.activity-title Photography
+              .text-muted
+                p
+                  a(href='https://500px.com/pierrevanmart') Events and street-photography

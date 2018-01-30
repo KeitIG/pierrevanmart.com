@@ -1,47 +1,47 @@
 doctype
 html(lang='en')
-    block vars
-    head
-        title!= `Pierre de la Martinière - ${title}`
+  block vars
+  head
+    title!= `Pierre de la Martinière - ${title}`
 
-        meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
 
-        meta(charset='UTF-8')
+    meta(charset='UTF-8')
 
-        meta(name='description' content=description)
-        meta(name='keywords' content='Pierre de la Martinière, full-stack developer, developer, geek, coder, javascript, open-source, photographer, musician')
-        meta(name='author' content='Pierre de la Martinière')
-        meta(name='robots' content='index, follow')
+    meta(name='description' content=description)
+    meta(name='keywords' content='Pierre de la Martinière, full-stack developer, developer, geek, coder, javascript, open-source, photographer, musician')
+    meta(name='author' content='Pierre de la Martinière')
+    meta(name='robots' content='index, follow')
 
-        meta(property='og:title' content=`Pierre de la Martinière - ${title}`)
-        meta(property='og:description' content=description)
-        meta(property='og:type' content='website')
-        meta(property='og:url' content=`http://pierrevanmart.com${canonical}`)
+    meta(property='og:title' content=`Pierre de la Martinière - ${title}`)
+    meta(property='og:description' content=description)
+    meta(property='og:type' content='website')
+    meta(property='og:url' content=`http://pierrevanmart.com${canonical}`)
 
-        meta(name='google-site-verification' content='qnlJ7QuO7bcx3atSdTDmeNDu3DfaY4gxtMwE7AUlits')
+    meta(name='google-site-verification' content='qnlJ7QuO7bcx3atSdTDmeNDu3DfaY4gxtMwE7AUlits')
 
-        link(rel='canonical' href=`http://pierrevanmart.com/${canonical}`)
-        link(rel='publisher' href='https://plus.google.com/u/0/+PierrevanMart')
+    link(rel='canonical' href=`http://pierrevanmart.com/${canonical}`)
+    link(rel='publisher' href='https://plus.google.com/u/0/+PierrevanMart')
 
-        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
-        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==", crossorigin="anonymous")
-        link(href='https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans' rel='stylesheet' type='text/css')
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==", crossorigin="anonymous")
+    link(href='https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans' rel='stylesheet' type='text/css')
 
-        each style in styles
-            link(href=`/styles/${style}.css` rel='stylesheet')
+    each style in styles
+      link(href=`/styles/${style}.css` rel='stylesheet')
 
-        link(rel='icon' type='image/png' href='/favicon.png')
+    link(rel='icon' type='image/png' href='/favicon.png')
 
-    body
+  body
 
-        .main-content(class=`view-${view}`)
-            block content
+    .main-content(class=`view-${view}`)
+      block content
 
-        script.
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-46869313-2', 'auto');
-            ga('send', 'pageview');
+      ga('create', 'UA-46869313-2', 'auto');
+      ga('send', 'pageview');
