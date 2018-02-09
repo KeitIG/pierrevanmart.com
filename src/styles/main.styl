@@ -1,52 +1,55 @@
 html
-    font-size 16px
+  font-size 16px
 
 body
-    font-family 'Inconsolata', sans-serif
-    background-color #12151b
-    color #B0B0B0
+  font-family 'Inconsolata', sans-serif
+  background-color #12151b
+  color #B0B0B0
+  line-height 1.5
+  text-shadow 0 0 1px black
+
+a
+  color #ffa73a
+
+&:hover,
+&:focus,
+&:active
+  color #ffa73a
+
+.view-home
+  @media screen and (min-width: 768px)
+    margin-top 10vh
+
+  .h3
     line-height 1.5
-    text-shadow 0 0 1px black
+    font-size 1.25rem
+
+  img.myself
+    display block
+    max-width 100%
+    width 150px
+    margin-top 15px
+    border solid 1px #4E4E4E
+    box-shadow 0 0 1px black
+
+    @media screen and (min-width: 768px)
+      float right
+      margin-top 8px
+
+  .white
+    color #EEE
+
+  .stuff
+
+    &:not(:first-child)
+      margin-top 25px
+
+    .link-container
+      display block
 
     a
-        color #ffa73a
+      display inline-block
+      padding 3px 0
 
-        &:hover,
-        &:focus,
-        &:active
-            color #ffa73a
-
-    .view-home
-        @media screen and (min-width: 768px)
-            margin-top 10vh
-
-        .h3
-            line-height 1.5
-            font-size 1.25rem
-
-        img.myself
-            display block
-            max-width 100%
-            width 150px
-            margin-top 15px
-            border solid 1px #4E4E4E
-            box-shadow 0 0 1px black
-
-            @media screen and (min-width: 768px)
-                float right
-                margin-top 8px
-
-        .white
-            color #EEE
-
-        .stuff
-
-            &:not(:first-child)
-                margin-top 25px
-
-            .link-container
-                display block
-
-                a
-                    display inline-block
-                    padding 3px 0
+  .mb-0
+    margin-bottom 0
